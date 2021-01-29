@@ -1,0 +1,7 @@
+<div class="container">
+  <h2>Login</h2>
+  <input #inputEmail type="email" placeholder="Email">
+  <input #inputPassword type="password" placeholder="Password">
+  <a routerLink="/register" routerLinkActive="active">No account? Sign up!</a>
+  <button type="button" (click)="loginUser(inputEmail.value, inputPassword.value)">Login</button>
+</div>

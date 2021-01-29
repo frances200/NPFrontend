@@ -1,0 +1,9 @@
+<div class="container">
+  <h2>Register</h2>
+  <input #fname class="fname" type="text" placeholder="First name">
+  <input #lname class="lname" type="text" placeholder="Surname">
+  <input #email type="email" placeholder="Email">
+  <input #password type="Password" placeholder="Password">
+  <input #phone type="tel" placeholder="Phone">
+  <button type="button" (click)="registerUser(email.value, password.value, fname.value, lname.value, phone.value)">Sign up</button>
+</div>

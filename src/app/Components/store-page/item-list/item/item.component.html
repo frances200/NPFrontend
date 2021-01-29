@@ -1,0 +1,7 @@
+<div class="container">
+  <img src="{{product.imageurl}}" alt="Placeholder">
+  <h4>{{product.name}}</h4>
+  <div class="line"></div>
+  <h3>{{product.price | currency}}</h3>
+  <button type="button" [routerLink]="['/product', product.id]" routerLinkActive="active">View Product</button>
+</div>

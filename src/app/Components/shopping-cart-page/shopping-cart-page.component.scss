@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .info {
+    border-bottom: 2px solid #7092FF;
+    width: 50%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    button {
+      height: 50%;
+      align-self: center;
+      width: 15%;
+      padding: 10px;
+      background-color: black;
+      color: white;
+      border-radius: 50px;
+      outline: none;
+      font-weight: bold;
+      font-size: 1em;
+      border: none;
+
+      //Hover
+      transition: 0.1s;
+      &:hover {
+        background-color: #7092FF;
+      }
+      &:active {
+        background-color: black;
+      }
+    }
+
+    h3 {
+      height: 0;
+      line-height: 0;
+    }
+  }
+}

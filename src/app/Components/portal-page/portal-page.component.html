@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="orders">
+    <p>Total Orders</p>
+    <h2>{{totalOrders}}</h2>
+  </div>
+  <div class="users">
+    <p>Total Users</p>
+    <h2>{{totalUsers}}</h2>
+  </div>
+  <div class="addProduct">
+    <h2>Add product</h2>
+    <input #Title type="text" placeholder="Title">
+    <input #Description type="text" placeholder="Description">
+    <input #Price type="number" placeholder="Price">
+    <input #ImageURL type="url" placeholder="Image URL">
+    <input #StartStock type="number" placeholder="Start Stock">
+    <button type="button" (click)="addProduct(Title.value, Description.value, Price.value, StartStock.value, ImageURL.value)">Add Product</button>
+  </div>
+  <div class="removeProduct">
+    <h2>Remove Product</h2>
+    <input #ProductID type="number" placeholder="Product ID">
+    <button type="button" (click)="removeProduct(ProductID.value)">Remove Product</button>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="container">
+  <h2>Shopping cart</h2>
+  <app-cart-list></app-cart-list>
+  <div class="info">
+    <h3>{{cart.getProducts().length}}</h3>
+    <h3>{{getTotalPrice() | currency}}</h3>
+    <button type="button" (click)="checkout()">Checkout</button>
+  </div>
+</div>

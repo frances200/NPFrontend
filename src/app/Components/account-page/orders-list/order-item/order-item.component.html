@@ -1,0 +1,5 @@
+<div class="container">
+  <h3>{{order.id}}</h3>
+  <p class="name">{{order.products[0].name}}</p>
+  <h4 class="price">Total: {{getOrderPrice() | currency}}</h4>
+</div>
