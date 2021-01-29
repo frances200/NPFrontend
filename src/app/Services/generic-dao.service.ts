@@ -7,7 +7,7 @@ import {UserService} from './user.service';
   providedIn: 'root'
 })
 export class GenericDaoService {
-  databaseAddress = 'http://localhost:3000/';
+  databaseAddress = 'http://introitus.synology.me:3000/';
 
   constructor(private http: HttpClient) {}
 
